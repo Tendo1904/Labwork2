@@ -35,7 +35,6 @@ def game_suggester(_genre,_platform,_type):
 				if (_genre) and (_platform) and (_type) in row:
 					a.append(row[1])
 			a = list(dict.fromkeys(a))
-			print(a)
 		with open ('final.txt', 'w') as fin:
 			for i in range (1,len(a)):
 				fin.write(str(a[i]) + '\n')
